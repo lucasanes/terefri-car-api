@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "Car",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "active": {
+      "type": "boolean"
+    },
+    "ano": {
+      "type": "biginteger"
+    },
+    "bluetooth": {
+      "type": "boolean"
+    },
+    "cambio": {
+      "type": "enumeration",
+      "enum": [
+        "Mecânico",
+        "Automático"
+      ]
+    },
+    "combustivel": {
+      "type": "enumeration",
+      "enum": [
+        "Flex",
+        "Gasolina",
+        "Diesel",
+        "Etanol"
+      ]
+    },
+    "imgs": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "km": {
+      "type": "biginteger"
+    },
+    "marca": {
+      "type": "string"
+    },
+    "modelo": {
+      "type": "string"
+    },
+    "motor": {
+      "type": "string"
+    },
+    "obs": {
+      "type": "text"
+    },
+    "sensor": {
+      "type": "enumeration",
+      "enum": [
+        "Não tem",
+        "Traseiro",
+        "Dianteiro",
+        "Traseiro e dianteiro"
+      ]
+    },
+    "preco": {
+      "type": "biginteger"
+    },
+    "sold": {
+      "type": "boolean"
+    }
+  }
+}
